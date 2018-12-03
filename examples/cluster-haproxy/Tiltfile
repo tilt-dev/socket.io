@@ -1,0 +1,4 @@
+print('here we gooo')
+
+def dctest():
+    return docker_compose_service('./docker-compose.yml')
