@@ -1,5 +1,3 @@
-print('here we gooo')
+print('hello docker-compose 👋')
 
 docker_compose('./docker-compose.yml')
-
-k8s_yaml('/Users/maia/code/go/src/github.com/windmilleng/servantes/global.yaml')
