@@ -2,48 +2,18 @@
 haproxy:
   build: ./haproxy
   links:
-    - server-john
-    - server-paul
-    - server-george
-    - server-ringo
+    - server-yoko
   ports:
    - "3000:80"
 
-server-john:
+server-yoko:
   build: ./server
   links:
     - redis
   expose:
     - "3000"
   environment:
-    - NAME=John
-
-server-paul:
-  build: ./server
-  links:
-    - redis
-  expose:
-    - "3000"
-  environment:
-    - NAME=Paul
-
-server-george:
-  build: ./server
-  links:
-    - redis
-  expose:
-    - "3000"
-  environment:
-    - NAME=George
-
-server-ringo:
-  build: ./server
-  links:
-    - redis
-  expose:
-    - "3000"
-  environment:
-    - NAME=Ringo
+    - NAME=Yoko
 
 redis:
   image: redis:alpine
