@@ -14,6 +14,8 @@ server.listen(port, function () {
   console.log('Hello, I\'m %s, how can I help?', serverName);
 });
 
+throw 'something is not right! something is quite wrong!'
+
 // Routing
 app.use(express.static(__dirname + '/public'));
 
